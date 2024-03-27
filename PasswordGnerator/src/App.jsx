@@ -39,7 +39,7 @@ function App() {
 
   useEffect(() => {
     passwordGenerator()
-    setButtonClicked(false); // Reset button clicked state whenever password changes
+    setButtonClicked(false); // Reset button clicked state whenever password changesR
   }, [length, numberAllowed, charAllowed, passwordGenerator])
   return (
     
