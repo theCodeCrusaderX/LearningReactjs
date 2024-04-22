@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <h2>Healthy Food Items</h2>
-      <Items val = {foodItems} />   //passing parent list to child
+      <Items val = {foodItems} />   {/*passing parent list to child*/}
       
     </>
   )
