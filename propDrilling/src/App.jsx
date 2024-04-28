@@ -29,9 +29,14 @@ function App() {
   return (
     <>
       <h2>Healthy Food Items</h2>
+<<<<<<< HEAD
       <InputBox handleOnChange={handleOnChange} handleKey= {handleKey} />
       <p>{text}</p>
       <Items val = {foodItems} />   {/*passing parent list to child*/}
+=======
+      <Items val = {foodItems} />   {/*passing parent list to child*/}
+      
+>>>>>>> 54558c6815e5e3a11ae95563782be92b488b4a5c
     </>
   )
 }
