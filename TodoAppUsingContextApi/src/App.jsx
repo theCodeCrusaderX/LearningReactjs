@@ -1,7 +1,9 @@
 import { Add } from './components/Add'
+import { EmptyMessage } from './components/EmptyMessage'
 import './App.css'
 import { ItemsContainer } from './components/ItemsContainer'
 import { useState } from 'react'
+import { myContext } from './myContext'
 
 function App() {
 
@@ -26,12 +28,15 @@ function App() {
 
   return (
     <>
-      <div className='flex items-center justify-center'>
-        <div className='max-w-lg bg-slate-400'>
-          <Add handleOnClick={handleNewItem}/>
-          <ItemsContainer listItems= {listItems} handleDeleteButton= {handleDeleteButton} />
+      <myContext.Provider value={{listItems,handleNewItem,handleDeleteButton}}>
+        <div className='flex items-center justify-center'>
+          <div className='max-w-lg bg-slate-400'>
+            <Add/>
+            <EmptyMessage/>
+            <ItemsContainer/>
+          </div>
         </div>
-      </div>
+      </myContext.Provider>
     </>
   )
 }

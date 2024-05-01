@@ -5,11 +5,7 @@ export function InputBox({val}) {
 
     return (
         <>
-            <div className='w-[80%] h-16 m-4 bg-black ml-10 text-6xl' >
-                <p>
-                    {val}
-                </p>
-            </div>
+            <input type="text" value={val} className='w-[80%] h-16 m-4 bg-black text-6xl' readOnly/>
         </>
     )
 }

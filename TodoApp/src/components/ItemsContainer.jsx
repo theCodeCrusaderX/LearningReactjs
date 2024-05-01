@@ -1,12 +1,12 @@
 import React from 'react'
 import { Items } from './Items'
 
-export function ItemsContainer({listItems}) {
+export function ItemsContainer({listItems,handleDeleteButton}) {
     
 
     return (
         <>
-            {listItems.map(it => <Items type= {it.name} dueDate = {it.date} />)}
+            {listItems.map((it,index) => <Items key={index} type= {it.name} dueDate = {it.date} handleDeleteButton= {handleDeleteButton} />)}
         </>
     )
 }

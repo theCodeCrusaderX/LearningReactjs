@@ -1,7 +1,9 @@
 import React from 'react'
-
-export function Items({type, dueDate,handleDeleteButton}) {
+import { useContext } from 'react'
+import { myContext } from '../myContext'
+export function Items({type, dueDate}) {
     
+    const {handleDeleteButton} = useContext(myContext)
 
     return (
         <>

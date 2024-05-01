@@ -1,9 +1,12 @@
 import React from 'react'
 import { useRef } from 'react'
+import { useContext } from 'react';
+import { myContext } from '../myContext';
 // import { useState } from 'react'
 
-export function Add({handleOnClick}) {
+export function Add({}) {
 
+    const {handleNewItem} = useContext(myContext)
     // const [input,setInput] = useState('')
     // const [date,setDate] = useState('') 
 
@@ -24,7 +27,7 @@ export function Add({handleOnClick}) {
         const todoDate = dueDate.current.value
 
         // console.log(`name ${todoName} , date ${todoDate}`)
-        handleOnClick(todoName,todoDate)
+        handleNewItem(todoName,todoDate)
         
         inputVal.current.value =''
         dueDate.current.value = ''
