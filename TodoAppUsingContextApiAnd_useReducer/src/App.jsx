@@ -8,13 +8,13 @@ function App() {
   return (
     <>
       <TodoItemsContexProvider>
-        <div className='flex items-center justify-center'>
-          <div className='max-w-lg bg-slate-400'>
-            <Add/>
-            <EmptyMessage/>
-            <ItemsContainer/>
+          <div className='flex items-center justify-center'>
+            <div className='max-w-lg bg-slate-400'>
+              <Add/>
+              <EmptyMessage/>
+              <ItemsContainer/>
+            </div>
           </div>
-        </div>
       </TodoItemsContexProvider>
     </>
   )

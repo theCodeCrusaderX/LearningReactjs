@@ -21,7 +21,7 @@ const todoItemsList = (state,action) => {
     return newListItem
 }
 
-const TodoItemsContexProvider = ({Children}) => {
+const TodoItemsContexProvider = ({children}) => {
 
 const [listItems,dispatch] = useReducer(todoItemsList,[])
 
@@ -49,7 +49,7 @@ const [listItems,dispatch] = useReducer(todoItemsList,[])
   }
 
   return (
-    <>
+    
       <myContext.Provider 
         value={{
           listItems,
@@ -57,10 +57,10 @@ const [listItems,dispatch] = useReducer(todoItemsList,[])
           handleDeleteButton
       }}>
 
-        {Children}
+        {children}
 
       </myContext.Provider>
-    </>
+    
   )
 }
 
