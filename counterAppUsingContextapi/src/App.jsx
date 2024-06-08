@@ -14,9 +14,6 @@ function App() {
      <h1>learning context api using counter App</h1>
      <h2>count is {counterState.count} </h2>
      <Counter/>
-     <Counter/>
-     <Counter/>
-     <Counter/>
     </>
   )
 }
