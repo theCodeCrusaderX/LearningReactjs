@@ -22,7 +22,7 @@ function Github() {
 
 export default Github
 
-export const githubInfoLoader = async () => {                                   //most fast way 
+export const githubInfoLoader = async () => {                          //most fast way 
     const response = await fetch('https://api.github.com/users/Dinesh726544')
     return response.json()
 }
