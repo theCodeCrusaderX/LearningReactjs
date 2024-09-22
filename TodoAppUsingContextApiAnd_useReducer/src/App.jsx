@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <TodoItemsContexProvider>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center h-screen'>
             <div className='max-w-lg bg-slate-400'>
               <Add/>
               <EmptyMessage/>
