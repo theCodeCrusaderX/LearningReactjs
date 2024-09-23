@@ -1,0 +1,24 @@
+ #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+@keyframes scaleImage {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-scale {
+  animation: scaleImage 3s infinite ease-in-out;
+}
+
+.animate-scale:hover {
+  animation-play-state: paused;
+}
+

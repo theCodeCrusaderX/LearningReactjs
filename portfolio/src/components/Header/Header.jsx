@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-
 import Drawer from "@mui/material/Drawer";
 import { Divider } from "@mui/material";
 import { IconButton } from "@mui/material";
@@ -81,7 +80,7 @@ export default function Header() {
             </ul>
           </div>
 
-          <div className="">
+          <div className="md:hidden">
             <IconButton onClick={toggleDrawer(true)}>
               <MenuIcon />
             </IconButton>
@@ -97,11 +96,11 @@ export default function Header() {
           }}
         >
           <div
-            className="flex flex-col h-full w-full p-4 bg-gray-800"
+            className="flex flex-col h-full w-full p-4 "
             onClick={toggleDrawer(false)}
             onKeyDown={toggleDrawer(false)}
           >
-            <h2 className="text-2xl font-bold mb-4 text-white">Menu</h2>
+            <h2 className="text-2xl font-bold mb-4 ">Menu</h2>
             <Divider
               sx={{
                 borderBottomWidth: 3,
@@ -112,27 +111,27 @@ export default function Header() {
             <nav className="space-y-4 flex flex-col mt-6">
               <Link
                 to="/"
-                className="block text-xl text-white hover:bg-gray-700 rounded-full py-2 px-4"
+                className="block text-xl hover:text-white  text-center hover:bg-gray-700 rounded-full py-2 px-4"
               >
                 Home
               </Link>
 
               <Link
                 to="/skills"
-                className="block text-xl text-white hover:bg-gray-700 rounded-full py-2 px-4"
+                className="block text-xl hover:text-white text-center hover:bg-gray-700 rounded-full py-2 px-4"
               >
                 Skills
               </Link>
 
               <Link
                 to="/projects"
-                className="block text-xl text-white hover:bg-gray-700 rounded-full py-2 px-4 "
+                className="block text-xl hover:text-white text-center hover:bg-gray-700 rounded-full py-2 px-4 "
               >
                 Projects
               </Link>
               <Link
                 to="/contact"
-                className="block text-xl text-white hover:bg-gray-700 rounded-full py-2 px-4 "
+                className="block text-xl hover:text-white text-center hover:bg-gray-700 rounded-full py-2 px-4 "
               >
                 Contact me
               </Link>
