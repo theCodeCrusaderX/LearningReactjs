@@ -48,7 +48,7 @@ return (
       <div>
         <center>
           <img
-            src="src\assets\1758.jpg"
+            src="/assets/me.jpg"
             className=" mt-4 h-[200px] w-[200px] rounded-full object-cover md:w-[400px] md:h-[400px] md:hover:h-[450px] md:hover:w-[450px] transition-all duration-300 ease-in-out animate-scale shadow-2xl"
           />
         </center>

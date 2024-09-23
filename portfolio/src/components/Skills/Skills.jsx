@@ -1,12 +1,11 @@
 import React from "react";
-import { FaCircle } from "react-icons/fa";
-import { LuCircleDot } from "react-icons/lu";
+
 function Skills() {
   return (
     <div className="lg:flex justify-between gap-10 items-center">
       <div className="hidden lg:block">
-        <img src="src/assets/skills_img.png" className="mb-14 h-[500px]" />
-        <img src="src/assets/skills_img2.png" className="h-[500px]" />
+        <img src="/assets/skills_img.png" className="mb-14 h-[500px]" />
+        <img src="/assets/skills_img2.png" className="h-[500px]" />
       </div>
       <div className="w-full lg:w-[40%]">
         <div>
@@ -16,7 +15,7 @@ function Skills() {
           <div className="flex gap-5 lg:w-3/4 flex-wrap">
             <div>
               <img
-                src="src/assets/React-icon.svg.png"
+                src="/assets/React-icon.svg.png"
                 alt=""
                 className="h-16"
               />
@@ -25,29 +24,29 @@ function Skills() {
               </p>
             </div>
             <div>
-              <img src="src/assets/js.png" alt="" className="h-16" />
+              <img src="/assets/js.png" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">
                 JavaScript
               </p>
             </div>
             <div>
-              <img src="src/assets/redux.png" alt="" className="h-16" />
+              <img src="/assets/redux.png" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">
                 Redux
               </p>
             </div>
             <div>
-              <img src="src/assets/html.png" alt="" className="h-16" />
+              <img src="/assets/html.png" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">
                 HTML5
               </p>
             </div>
             <div>
-              <img src="src/assets/css.png" alt="" className="h-16" />
+              <img src="/assets/css.png" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">CSS3</p>
             </div>
             <div>
-              <img src="src/assets/bootstrap.jpeg" alt="" className="h-16" />
+              <img src="/assets/bootstrap.jpeg" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">
                 Bootstrap
               </p>
@@ -60,17 +59,17 @@ function Skills() {
           </p>
           <div className="flex gap-5 w-3/4 flex-wrap">
             <div>
-              <img src="src/assets/node.png" alt="" className="h-16" />
+              <img src="/assets/node.png" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">Node</p>
             </div>
             <div>
-              <img src="src/assets/express.webp" alt="" className="h-16" />
+              <img src="/assets/express.webp" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">
                 Express
               </p>
             </div>
             <div>
-              <img src="src/assets/appwrite.png" alt="" className="h-16" />
+              <img src="/assets/appwrite.png" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">
                 appwrite
               </p>
@@ -83,13 +82,13 @@ function Skills() {
           </p>
           <div className="flex gap-5 w-3/4 flex-wrap">
             <div>
-              <img src="src/assets/mongodb.png" alt="" className="h-16" />
+              <img src="/assets/mongodb.png" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">
                 MongoDB
               </p>
             </div>
             <div>
-              <img src="src/assets/postgresql.svg" alt="" className="h-16" />
+              <img src="/assets/postgresql.svg" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">
                 Postgresql
               </p>
@@ -102,23 +101,23 @@ function Skills() {
           </p>
           <div className="flex gap-5 w-3/4 flex-wrap">
             <div>
-              <img src="src/assets/git.png" alt="" className="h-16" />
+              <img src="/assets/git.png" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">Git</p>
             </div>
             <div>
-              <img src="src/assets/github.png" alt="" className="h-16" />
+              <img src="/assets/github.png" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">
                 GitHub
               </p>
             </div>
             <div>
-              <img src="src/assets/vercel.png" alt="" className="h-16" />
+              <img src="/assets/vercel.png" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">
                 Vercel
               </p>
             </div>
             <div>
-              <img src="src/assets/render.png" alt="" className="h-16" />
+              <img src="/assets/render.png" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">
                 Render
               </p>
@@ -129,17 +128,17 @@ function Skills() {
           <p className="font-montserrat font-bold text-2xl m-4 ml-0">Tools</p>
           <div className="flex gap-5 w-3/4 flex-wrap">
             <div>
-              <img src="src/assets/vs.webp" alt="" className="h-16" />
+              <img src="/assets/vs.webp" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">
                 VS Code
               </p>
             </div>
             <div>
-              <img src="src/assets/npm.png" alt="" className="h-16" />
+              <img src="/assets/npm.png" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">npm</p>
             </div>
             <div>
-              <img src="src/assets/postman.png" alt="" className="h-16" />
+              <img src="/assets/postman.png" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">
                 Postman
               </p>
@@ -150,13 +149,13 @@ function Skills() {
           <p className="font-montserrat font-bold text-2xl m-4 ml-0">Design</p>
           <div className="flex gap-5 w-3/4 flex-wrap">
             <div>
-              <img src="src/assets/figma.png" alt="" className="h-16" />
+              <img src="/assets/figma.png" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">
                 Figma
               </p>
             </div>
             <div>
-              <img src="src/assets/canva.jpeg" alt="" className="h-16" />
+              <img src="/assets/canva.jpeg" alt="" className="h-16" />
               <p className="text-center font-roboto font-light text-lg">
                 Canva
               </p>

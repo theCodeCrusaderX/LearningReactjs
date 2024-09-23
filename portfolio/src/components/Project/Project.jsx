@@ -1,10 +1,10 @@
 import React from 'react'
 import MultiActionAreaCard from '../Card'
-import BiteBlend from "../../assets/BiteBlend.jpeg"
-import videoTube from "../../assets/videoTube.jpeg"
-import weatherWise from "../../assets/weatherWise.jpeg"
-import passwordPro from "../../assets/password-pro.jpeg"
-import Todo from "../../assets/Todo.jpeg"
+import BiteBlend from "/assets/BiteBlend.jpeg"
+import videoTube from "/assets/videoTube.jpeg"
+import weatherWise from "/assets/weatherWise.jpeg"
+import passwordPro from "/assets/password-pro.jpeg"
+import Todo from "/assets/Todo.jpeg"
 
 function Project() {
   return (

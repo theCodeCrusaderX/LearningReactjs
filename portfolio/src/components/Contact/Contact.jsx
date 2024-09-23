@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { enqueueSnackbar } from "notistack";
 import Spinner from "../Spinner";
-import contactMe from "../../assets/contact me.png"
+import contactMe from "/assets/contact me.png"
 
 
 function Contact() {
