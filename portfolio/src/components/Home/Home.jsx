@@ -1,42 +1,48 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useEffect,useState } from "react";
 import "../../App.css";
+import { useSelector } from "react-redux";
 
 export default function Home() {
-  var loop = ["developer  ","ui/ux  ","React  ","full stack web dev  ","javascript  "]
-  const [currentWord, setCurrentWord] = useState('');
-  const [charIndex, setCharIndex] = useState(0);
-  const [wordIndex, setWordIndex] = useState(0);
 
-  useEffect(() => {
-    const handle = setInterval(() => {
-      setCharIndex((prevCharIndex) => {
-        if (prevCharIndex < loop[wordIndex].length) {
-          setCurrentWord(loop[wordIndex].substring(0, prevCharIndex + 1));
-          return prevCharIndex + 1;
-        } else {
-          setWordIndex((prevWordIndex) => (prevWordIndex + 1) % loop.length);
-          return 0;
-        }
-      });
-    }, 200); // Adjust the speed by changing the interval duration
+  const theme = useSelector((state) => state.themeChanger.value)
+  console.log(theme);
+  
 
-    return () => clearInterval(handle);
-  }, [wordIndex, loop]);
+  // var loop = ["full stack  ","MERN  ","developer  ","ui/ux  ","React  ","javascript  "]
+  // const [currentWord, setCurrentWord] = useState('');
+  // const [charIndex, setCharIndex] = useState(0);
+  // const [wordIndex, setWordIndex] = useState(0);
+  
+
+  // useEffect(() => {
+  //   const handle = setInterval(() => {
+  //     setCharIndex((prevCharIndex) => {
+  //       if (prevCharIndex < loop[wordIndex].length) {
+  //         setCurrentWord(loop[wordIndex].substring(0, prevCharIndex + 1));
+  //         return prevCharIndex + 1;
+  //       } else {
+  //         setWordIndex((prevWordIndex) => (prevWordIndex + 1) % loop.length);
+  //         return 0;
+  //       }
+  //     });
+  //   }, 200); // Adjust the speed by changing the interval duration
+
+  //   return () => clearInterval(handle);
+  // }, [wordIndex, loop]);
 
 return (
-    <div className="mt-10 mx-auto w-full max-w-7xl md:flex justify-around mb-10">
-      
+    <div className={`mt-10 mx-auto w-full max-w-7xl md:flex justify-around mb-10 md:h-screen items-center ${theme ? "bg-[#1A1A1A]" : "bg-gray-100 "} rounded-xl md:p-8`}>
 
       <div className="md:w-2/4">
-        <h2 className="text-4xl font-bold sm:text-5xl m-3 mt-10">
-          {currentWord}_
-          <span className="hidden sm:block text-xl mt-5">
+        <h2 className={`text-4xl font-bold sm:text-5xl m-3 mt-10 ${theme ? "text-white" : "text-black"}`}>
+          {/* {currentWord}_ */}
+          Developer Dinesh
+          <span className={`hidden sm:block text-xl mt-5 ${theme ? "text-white" : "text-black"}`}>
             I am full stack web dev
           </span>
         </h2>
-        <p className="mt-10">
+        <p className={`mt-10 ${theme ? "text-white" : "text-black"}`}>
           Hello! I'm Dinesh, a dedicated third-year Computer Science student
           with a focus on Internet of Things, Cyber Security, and Blockchain
           Development. My passion lies in Full-Stack Web Development, where I
@@ -44,6 +50,12 @@ return (
           solutions.I strive to deliver concise and high-quality code, ensuring
           both efficiency and readability
         </p>
+        <button
+        className={`text-center text-[30px] font-bold m-10 ${theme ? "bg-white hover:bg-black hover:text-white transition duration-300 ease-in-out" : "text-black hover:bg-black hover:text-white transition duration-300 ease-in-out"} rounded-2xl px-8 p-2 `}
+            onClick={() =>window.open('./assets/appwrite.png')}
+          >
+            Resume
+          </button>
       </div>
       <div>
         <center>

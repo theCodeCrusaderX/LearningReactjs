@@ -12,28 +12,10 @@ import Home from "./components/Home/Home.jsx";
 import Skills from "./components/Skills/Skills.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Project from "./components/Project/Project.jsx";
-import {SnackbarProvider} from "notistack"
+import { SnackbarProvider } from "notistack";
 
-// const router = createBrowserRouter([
-//   {
-//     path: '/',
-//     element: <Layout/>,
-//     children: [
-//       {
-//         path: "",
-//         element: <Home />
-//       },
-//       {
-//         path: "about",
-//         element: <About />
-//       },
-//       {
-//         path: "contact",
-//         element: <Contact />
-//       }
-//     ]
-//   }
-// ])
+import { store } from "./app/store";
+import { Provider } from "react-redux";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -49,7 +31,9 @@ const router = createBrowserRouter(
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <SnackbarProvider>
-      <RouterProvider router={router} />
+      <Provider store={store}>
+        <RouterProvider router={router} />
+      </Provider>
     </SnackbarProvider>
   </React.StrictMode>
 );

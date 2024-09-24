@@ -2,9 +2,9 @@ import React from "react";
 
 function Skills() {
   return (
-    <div className="lg:flex justify-between gap-10 items-center">
+    <div className="lg:flex justify-between gap-10 items-center bg-[#1A1A1A] mt-10 mb-10 rounded-xl">
       <div className="hidden lg:block">
-        <img src="/assets/skills_img.png" className="mb-14 h-[500px]" />
+        <img src="/assets/skills-1_img.png" className="mb-14 h-[500px]" />
         <img src="/assets/skills_img2.png" className="h-[500px]" />
       </div>
       <div className="w-full lg:w-[40%]">

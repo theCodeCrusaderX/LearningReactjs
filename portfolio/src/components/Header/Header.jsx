@@ -5,6 +5,10 @@ import Drawer from "@mui/material/Drawer";
 import { Divider } from "@mui/material";
 import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleTheme } from "../../features/themeChanger/themeChanger";
+import { MdOutlineLightMode } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,12 +23,39 @@ export default function Header() {
     setIsOpen(open);
   };
 
+  const theme = useSelector((state) => state.themeChanger.value);
+
+  const dark = () => {
+    document.querySelector("body").setAttribute("class", "dark");
+  };
+  const light = () => {
+    document.querySelector("body").setAttribute("class", "light");
+  };
+
+  {
+    theme ? dark() : light();
+  }
+
+  const dispatch = useDispatch();
+
+  const toggleThemeButton = () => {
+    dispatch(toggleTheme());
+  };
+
   return (
-    <header className="shadow sticky z-50 top-0">
-      <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
+    <header className={`shadow sticky z-50 top-0 `}>
+      <nav
+        className={`bg-white border-gray-200 px-4 lg:px-6 py-2.5 ${
+          theme ? "bg-[#1A1A1A]" : "bg-gray-100 "
+        } rounded-xl`}
+      >
         <div className="flex justify-between items-center mx-auto max-w-screen-xl">
           <div>
-            <Link to="/">theCodeCrusaderX</Link>
+            <Link to="/">
+              <span className={`${theme ? "text-white" : "text-black"}`}>
+                theCodeCrusaderX
+              </span>
+            </Link>
           </div>
 
           <div className="hidden justify-between items-center w-full lg:flex lg:w-auto">
@@ -34,7 +65,7 @@ export default function Header() {
                   to="/"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
-                      isActive ? "text-orange-700" : "text-gray-700"
+                      isActive ? "text-orange-700" : "text-green-800"
                     } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
@@ -77,6 +108,15 @@ export default function Header() {
                   Contact
                 </NavLink>
               </li>
+              <li>
+                <button onClick={toggleThemeButton}>
+                  {theme ? (
+                    <MdOutlineLightMode size={30} className="text-white" />
+                  ) : (
+                    <MdDarkMode size={30} />
+                  )}
+                </button>
+              </li>
             </ul>
           </div>
 
@@ -90,7 +130,13 @@ export default function Header() {
           anchor="right"
           open={isOpen}
           onClose={toggleDrawer(false)}
-          sx={{ width: 250 }}
+          sx={{
+            width: 250,
+            "& .MuiDrawer-paper": {
+              backgroundColor: "#121212", // Custom background color
+              color: "#ffffff", // Custom text color (optional)
+            },
+          }}
           ModalProps={{
             keepMounted: true,
           }}
@@ -100,7 +146,13 @@ export default function Header() {
             onClick={toggleDrawer(false)}
             onKeyDown={toggleDrawer(false)}
           >
-            <h2 className="text-2xl font-bold mb-4 ">Menu</h2>
+            <button onClick={toggleThemeButton} className="text-center m-4">
+              {theme ? (
+                <MdOutlineLightMode size={30} className="text-white" />
+              ) : (
+                <MdDarkMode size={30} />
+              )}
+            </button>
             <Divider
               sx={{
                 borderBottomWidth: 3,

@@ -5,12 +5,14 @@ import { Outlet } from 'react-router-dom'
 import './App.css'
 
 function Layout() {
+
+  
   return (
-    <>
+    <div>
     <Header/>
     <Outlet />
     <Footer />
-    </>
+    </div>
   )
 }
 
