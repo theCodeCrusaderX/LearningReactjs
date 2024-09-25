@@ -5,10 +5,16 @@ import videoTube from "/assets/videoTube.jpeg"
 import weatherWise from "/assets/weatherWise.jpeg"
 import passwordPro from "/assets/password-pro.jpeg"
 import Todo from "/assets/Todo.jpeg"
+import { useSelector } from 'react-redux'
 
 function Project() {
+
+  const theme = useSelector((state) => state.themeChanger.value)
+
   return (
-    <div className='flex justify-between flex-wrap m-4 gap-4'>
+    <div className={`flex justify-between flex-wrap m-4 gap-4 mt-10 mb-10 ${
+      theme ? "bg-[#1A1A1A]" : "bg-gray-100 "
+    } rounded-xl md:p-10 `}>
       <MultiActionAreaCard img={BiteBlend} name={"BiteBlend"} dis={"Built a full-stack app with React, Node, and MongoDB. Integrated JWT for authentication, Cloudinary for images, and used Redux for state. Designed a responsive UI with Material UI and Tailwind. Added Gimeni AI for recipes, with pagination and search in history."}/>
 
       <MultiActionAreaCard img={videoTube} name={"videoTube"} dis={"Built backend for a YouTube-like platform with Node.js and Express, handling video uploads, streaming, and user interactions. Used JWT for authentication, Cloudinary for video storage, and Multer for file handling. Designed a RESTful API for uploads, comments, and streaming, with MongoDB for data management."}/>

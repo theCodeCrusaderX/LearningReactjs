@@ -121,7 +121,10 @@ export default function Header() {
           </div>
 
           <div className="md:hidden">
-            <IconButton onClick={toggleDrawer(true)}>
+            <IconButton
+              onClick={toggleDrawer(true)}
+              sx={{ color: theme ? "white" : "black" }}
+            >
               <MenuIcon />
             </IconButton>
           </div>

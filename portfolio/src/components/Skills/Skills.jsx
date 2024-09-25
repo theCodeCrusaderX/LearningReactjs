@@ -9,13 +9,13 @@ function Skills() {
     <div
       className={`lg:flex justify-between gap-10 items-center mt-10 mb-10 rounded-xl ${
         theme ? "bg-[#1A1A1A]" : "bg-gray-100 "
-      } rounded-xl`}
+      } rounded-xl p-10`}
     >
       <div className="hidden lg:block">
         <img src="/assets/skills-1_img.png" className="mb-14 h-[500px]" />
         <img src="/assets/skills_img2.png" className="h-[500px]" />
       </div>
-      <div className="w-full lg:w-[40%]">
+      <div className="w-full sm:m-20 md:m-0 lg:w-[40%]">
         <div>
           <p
             className={`font-montserrat font-bold text-2xl m-4 ml-0 ${

@@ -60,7 +60,15 @@ function Contact() {
           <div className="hidden md:block">
             <img src={contactMe} alt="" className="h-[500px]" />
           </div>
-          <div className="">
+
+          <div>
+            <center
+              className={`text-4xl font-bold sm:text-5xl m-3 mt-10 ${
+                theme ? "text-white" : "text-black"
+              }`}
+            >
+              Get in Touch! 😀
+            </center>
             <form
               onSubmit={onSubmit}
               className="flex flex-col md:w-3/4 gap-6 m-6"
@@ -86,7 +94,9 @@ function Contact() {
               <textarea
                 name="message"
                 placeholder="write something"
-                className={`${!theme && "border-2"}  rounded-lg p-2 h-40 overflow-y-auto resize-none ${
+                className={`${
+                  !theme && "border-2"
+                }  rounded-lg p-2 h-40 overflow-y-auto resize-none ${
                   theme ? "bg-black text-white" : "bg-white"
                 }`}
                 maxLength="200"
@@ -94,18 +104,24 @@ function Contact() {
               <center>
                 <button
                   type="submit"
-                  className={`border-2 rounded-lg p-2 ${
-                    theme ? "bg-black text-white hover:bg-white hover:text-black" : "bg-white text-balck hover:bg-black hover:text-white"
-                  }`}
+                  className={`text-center font-bold ${
+                    theme
+                      ? "bg-white hover:bg-green-900 hover:text-white transition duration-300 ease-in-out"
+                      : " hover:bg-green-900 hover:text-white transition duration-300 ease-in-out bg-black text-white"
+                  } rounded-2xl px-8 p-2`}
                 >
                   Submit Form
                 </button>
               </center>
             </form>
             <div className="">
-              <center className={`text-4xl font-bold ${
-                    theme ? " text-white" : "text-black"
-                  }`}>or</center>
+              <center
+                className={`text-4xl font-bold ${
+                  theme ? " text-white" : "text-black"
+                }`}
+              >
+                or
+              </center>
               <a href="mailto:your-email@gmail.com">
                 <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded m-4">
                   Contact Me via Email

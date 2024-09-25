@@ -1,19 +1,16 @@
 import React from "react";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import "../../App.css";
 import { useSelector } from "react-redux";
 
 export default function Home() {
-
-  const theme = useSelector((state) => state.themeChanger.value)
+  const theme = useSelector((state) => state.themeChanger.value);
   console.log(theme);
-  
 
   // var loop = ["full stack  ","MERN  ","developer  ","ui/ux  ","React  ","javascript  "]
   // const [currentWord, setCurrentWord] = useState('');
   // const [charIndex, setCharIndex] = useState(0);
   // const [wordIndex, setWordIndex] = useState(0);
-  
 
   // useEffect(() => {
   //   const handle = setInterval(() => {
@@ -31,31 +28,58 @@ export default function Home() {
   //   return () => clearInterval(handle);
   // }, [wordIndex, loop]);
 
-return (
-    <div className={`mt-10 mx-auto w-full max-w-7xl md:flex justify-around mb-10 md:h-screen items-center ${theme ? "bg-[#1A1A1A]" : "bg-gray-100 "} rounded-xl md:p-8`}>
-
+  return (
+    <div
+      className={`mt-10 mx-auto w-full max-w-7xl md:flex justify-around mb-10 md:h-screen items-center ${
+        theme ? "bg-[#1A1A1A]" : "bg-gray-100 "
+      } rounded-xl p-8`}
+    >
       <div className="md:w-2/4">
-        <h2 className={`text-4xl font-bold sm:text-5xl m-3 mt-10 ${theme ? "text-white" : "text-black"}`}>
+        <h2
+          className={`text-4xl font-bold sm:text-5xl m-3 mt-10 ${
+            theme ? "text-white" : "text-black"
+          }`}
+        >
           {/* {currentWord}_ */}
-          Developer Dinesh
-          <span className={`hidden sm:block text-xl mt-5 ${theme ? "text-white" : "text-black"}`}>
-            I am full stack web dev
+          Hello!👋
+          <span className="sm:hidden">
+            <br />
+          </span>
+          <span
+            className={` sm:block text-xl mt-5 ${
+              theme ? "text-white" : "text-black"
+            }`}
+          >
+            I am Dinesh
+          </span>
+          <span className="sm:hidden">
+            <br />
+          </span>
+          <span
+            className={`sm:block text-xl mt-5 ${
+              theme ? "text-white" : "text-black"
+            }`}
+          >
+            Full Stack Web Developer
           </span>
         </h2>
         <p className={`mt-10 ${theme ? "text-white" : "text-black"}`}>
-          Hello! I'm Dinesh, a dedicated third-year Computer Science student
-          with a focus on Internet of Things, Cyber Security, and Blockchain
-          Development. My passion lies in Full-Stack Web Development, where I
-          excel at simplifying complex codebases into clear and maintainable
-          solutions.I strive to deliver concise and high-quality code, ensuring
-          both efficiency and readability
+          Computer Science student with a focus on Internet of Things, Cyber
+          Security, and Blockchain Development. My passion lies in Full-Stack
+          Web Development, where I excel at simplifying complex codebases into
+          clear and maintainable solutions.I strive to deliver concise and
+          high-quality code, ensuring both efficiency and readability
         </p>
         <button
-        className={`text-center text-[30px] font-bold m-10 ${theme ? "bg-white hover:bg-black hover:text-white transition duration-300 ease-in-out" : "text-black hover:bg-black hover:text-white transition duration-300 ease-in-out"} rounded-2xl px-8 p-2 `}
-            onClick={() =>window.open('./assets/appwrite.png')}
-          >
-            Resume
-          </button>
+          className={`text-center md:text-[30px] font-bold m-10 ${
+            theme
+              ? "bg-white hover:bg-green-900 hover:text-white transition duration-300 ease-in-out"
+              : " hover:bg-green-900 hover:text-white transition duration-300 ease-in-out bg-black text-white"
+          } rounded-2xl px-8 p-2`}
+          onClick={() => window.open("./assets/appwrite.png")}
+        >
+          Click me!
+        </button>
       </div>
       <div>
         <center>
