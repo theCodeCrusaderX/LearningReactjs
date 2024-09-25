@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import "../../App.css";
 import { useSelector } from "react-redux";
 
@@ -76,7 +76,7 @@ export default function Home() {
               ? "bg-white hover:bg-green-900 hover:text-white transition duration-300 ease-in-out"
               : " hover:bg-green-900 hover:text-white transition duration-300 ease-in-out bg-black text-white"
           } rounded-2xl px-8 p-2`}
-          onClick={() => window.open("./assets/appwrite.png")}
+          onClick={() => window.open("./assets/My_resume.pdf")}
         >
           Click me!
         </button>
