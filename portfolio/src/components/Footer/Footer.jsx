@@ -12,7 +12,7 @@ export default function Footer() {
 
   return (
     <footer
-      className={`bg-white rounded-xl ${theme ? "bg-[#1A1A1A]" : "bg-gray-100 "}`}
+      className={`rounded-xl ${theme ? "bg-[#1A1A1A]" : "bg-gray-100 "}`}
     >
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
