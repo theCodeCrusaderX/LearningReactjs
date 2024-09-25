@@ -136,8 +136,8 @@ export default function Header() {
           sx={{
             width: 250,
             "& .MuiDrawer-paper": {
-              backgroundColor: "#121212", // Custom background color
-              color: "#ffffff", // Custom text color (optional)
+              backgroundColor: theme ? "black" : "white", 
+              color: theme ? "white" : "black", 
             },
           }}
           ModalProps={{
@@ -159,34 +159,34 @@ export default function Header() {
             <Divider
               sx={{
                 borderBottomWidth: 3,
-                borderColor: "white",
+                borderColor: theme ? "white" : "black",
                 fontWeight: "bold",
               }}
             />
             <nav className="space-y-4 flex flex-col mt-6">
               <Link
                 to="/"
-                className="block text-xl hover:text-white  text-center hover:bg-gray-700 rounded-full py-2 px-4"
+                className={`block text-xl hover:text-white  text-center hover:bg-gray-700 rounded-full py-2 px-4 border ${theme ? "border-white" : "border-black"}`}
               >
                 Home
               </Link>
 
               <Link
                 to="/skills"
-                className="block text-xl hover:text-white text-center hover:bg-gray-700 rounded-full py-2 px-4"
+                className={`block text-xl hover:text-white text-center hover:bg-gray-700 rounded-full py-2 px-4 border ${theme ? "border-white" : "border-black"}`}
               >
                 Skills
               </Link>
 
               <Link
                 to="/projects"
-                className="block text-xl hover:text-white text-center hover:bg-gray-700 rounded-full py-2 px-4 "
+                className={`block text-xl hover:text-white text-center hover:bg-gray-700 rounded-full py-2 px-4 border ${theme ? "border-white" : "border-black"}`}
               >
                 Projects
               </Link>
               <Link
                 to="/contact"
-                className="block text-xl hover:text-white text-center hover:bg-gray-700 rounded-full py-2 px-4 "
+                className={`block text-xl hover:text-white text-center hover:bg-gray-700 rounded-full py-2 px-4 border ${theme ? "border-white" : "border-black"}`}
               >
                 Contact me
               </Link>
