@@ -25,33 +25,7 @@ export default function Footer() {
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             
-            <Link
-              to="#"
-              className={`text-gray-500 ${
-                theme ? "hover:text-white" : "hover:text-gray-900"
-              }`}
-            >
-              <CiFacebook size={30} />
-              <span
-                className={`sr-only ${theme ? "text-white" : "text-black"}`}
-              >
-                Facebook page
-              </span>
-            </Link>
-
-            <Link
-              to="#"
-              className={`text-gray-500 ${
-                theme ? "hover:text-white" : "hover:text-gray-900"
-              }`}
-            >
-              <FaDiscord size={30} />
-              <span
-                className={`sr-only ${theme ? "text-white" : "text-black"}`}
-              >
-                Discord community
-              </span>
-            </Link>
+            
 
             <Link
               to="https://x.com/Code__Crusader"
@@ -68,7 +42,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              to="#"
+              to="https://github.com/theCodeCrusaderX"
               className={`text-gray-500 ${
                 theme ? "hover:text-white" : "hover:text-gray-900"
               }`}
@@ -82,7 +56,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              to="#"
+              to="https://www.instagram.com/_thecodecrusaderx/?hl=en"
               className={`text-gray-500 ${
                 theme ? "hover:text-white" : "hover:text-gray-900"
               }`}
@@ -92,6 +66,34 @@ export default function Footer() {
                 className={`sr-only ${theme ? "text-white" : "text-black"}`}
               >
                 Instagram
+              </span>
+            </Link>
+
+            <Link
+              to="#"
+              className={`text-gray-500 ${
+                theme ? "hover:text-white" : "hover:text-gray-900"
+              }`}
+            >
+              <CiFacebook size={30} />
+              <span
+                className={`sr-only ${theme ? "text-white" : "text-black"}`}
+              >
+                Facebook page
+              </span>
+            </Link>
+
+            <Link
+              to="https://discord.com/channels/@me"
+              className={`text-gray-500 ${
+                theme ? "hover:text-white" : "hover:text-gray-900"
+              }`}
+            >
+              <FaDiscord size={30} />
+              <span
+                className={`sr-only ${theme ? "text-white" : "text-black"}`}
+              >
+                Discord community
               </span>
             </Link>
           </div>
