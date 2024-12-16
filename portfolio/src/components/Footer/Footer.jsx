@@ -6,6 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import { CiLinkedin } from "react-icons/ci";
 
 export default function Footer() {
   const theme = useSelector((state) => state.themeChanger.value);
@@ -70,16 +71,16 @@ export default function Footer() {
             </Link>
 
             <Link
-              to="#"
+              to="https://www.linkedin.com/in/thecodecrusaderx/"
               className={`text-gray-500 ${
                 theme ? "hover:text-white" : "hover:text-gray-900"
               }`}
             >
-              <CiFacebook size={30} />
+              <CiLinkedin size={30} />
               <span
                 className={`sr-only ${theme ? "text-white" : "text-black"}`}
               >
-                Facebook page
+                LinkedIn page
               </span>
             </Link>
 
