@@ -109,6 +109,18 @@ export default function Header() {
                 </NavLink>
               </li>
               <li>
+                <NavLink
+                  to="/achievements"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 ${
+                      isActive ? "text-orange-700" : "text-green-800"
+                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Achievements
+                </NavLink>
+              </li>
+              <li>
                 <button onClick={toggleThemeButton}>
                   {theme ? (
                     <MdOutlineLightMode size={30} className="text-white" />
@@ -189,6 +201,12 @@ export default function Header() {
                 className={`block text-xl hover:text-white text-center hover:bg-gray-700 rounded-full py-2 px-4 border ${theme ? "border-white" : "border-black"}`}
               >
                 Contact me
+              </Link>
+              <Link
+                to="/achievements"
+                className={`block text-xl hover:text-white text-center hover:bg-gray-700 rounded-full py-2 px-4 border ${theme ? "border-white" : "border-black"}`}
+              >
+                Achievements
               </Link>
             </nav>
           </div>

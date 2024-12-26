@@ -16,6 +16,7 @@ import { SnackbarProvider } from "notistack";
 
 import { store } from "./app/store";
 import { Provider } from "react-redux";
+import Achievement from "./components/Achievement/Achievement.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path="/Skills" element={<Skills />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/Projects" element={<Project />} />
+      <Route path="/achievements" element={<Achievement />} />
     </Route>
   )
 );
