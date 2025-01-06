@@ -29,7 +29,7 @@ export default function Footer() {
             
 
             <Link
-              to="https://x.com/Code__Crusader"
+              to="https://x.com/theCodeCrusader"
               className={`text-gray-500 ${
                 theme ? "hover:text-white" : "hover:text-gray-900"
               }`}
