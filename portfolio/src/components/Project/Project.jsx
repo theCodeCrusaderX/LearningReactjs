@@ -6,6 +6,7 @@ import weatherWise from "/assets/weatherWise.jpeg";
 import passwordPro from "/assets/password-pro.jpeg";
 import BookHeaven from "/assets/BookHeaven.jpeg"
 import Todo from "/assets/Todo.jpeg";
+import Trendora from "/assets/Trendora.png";
 import { useSelector } from "react-redux";
 
 function Project() {
@@ -17,6 +18,22 @@ function Project() {
         theme ? "bg-[#1A1A1A]" : "bg-gray-100 "
       } rounded-xl md:p-10 `}
     >
+      <div>
+        <a
+          href="https://trendora-lyart.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <MultiActionAreaCard
+            img={Trendora}
+            name={"Trendora"}
+            dis={
+              "Built secure platform with JWT auth, admin/user dashboards, and advanced product filtering, Implemented Cloudinary for image management and PayPal payments (processed $5K+ test transactions) Boosted conversions by 22% with guest checkout and responsive design Built dashboard with CRUD ops for products/orders"
+            }
+          />
+        </a>
+      </div>
+
       <div>
         <a
           href="https://recipefinder-frontend.onrender.com/"

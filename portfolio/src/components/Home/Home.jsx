@@ -1,32 +1,11 @@
 import React from "react";
-// import { useEffect, useState } from "react";
 import "../../App.css";
 import { useSelector } from "react-redux";
+import { FaDownload } from "react-icons/fa";
 
 export default function Home() {
   const theme = useSelector((state) => state.themeChanger.value);
   console.log(theme);
-
-  // var loop = ["full stack  ","MERN  ","developer  ","ui/ux  ","React  ","javascript  "]
-  // const [currentWord, setCurrentWord] = useState('');
-  // const [charIndex, setCharIndex] = useState(0);
-  // const [wordIndex, setWordIndex] = useState(0);
-
-  // useEffect(() => {
-  //   const handle = setInterval(() => {
-  //     setCharIndex((prevCharIndex) => {
-  //       if (prevCharIndex < loop[wordIndex].length) {
-  //         setCurrentWord(loop[wordIndex].substring(0, prevCharIndex + 1));
-  //         return prevCharIndex + 1;
-  //       } else {
-  //         setWordIndex((prevWordIndex) => (prevWordIndex + 1) % loop.length);
-  //         return 0;
-  //       }
-  //     });
-  //   }, 200); // Adjust the speed by changing the interval duration
-
-  //   return () => clearInterval(handle);
-  // }, [wordIndex, loop]);
 
   return (
     <div
@@ -71,14 +50,15 @@ export default function Home() {
           high-quality code, ensuring both efficiency and readability
         </p>
         <button
-          className={`text-center md:text-[30px] font-bold m-10 ${
+          className={`flex items-center gap-3 mt-8 font-semibold text-lg px-6 py-3 rounded-xl shadow-lg transition duration-300 ease-in-out ${
             theme
-              ? "bg-white hover:bg-green-900 hover:text-white transition duration-300 ease-in-out"
-              : " hover:bg-green-900 hover:text-white transition duration-300 ease-in-out bg-black text-white"
-          } rounded-2xl px-8 p-2`}
+              ? "bg-white text-black hover:bg-green-900 hover:text-white"
+              : "bg-black text-white hover:bg-green-900"
+          }`}
           onClick={() => window.open("./assets/Resume.pdf")}
         >
-          Click me!
+          <FaDownload className="text-xl" />
+          Download Resume
         </button>
       </div>
       <div>

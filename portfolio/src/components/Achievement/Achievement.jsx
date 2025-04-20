@@ -3,6 +3,7 @@ import MultiActionAreaCard from "../Card";
 import leetCode from "/assets/leetCode.jpeg"
 import coding_club from "/assets/coding_club.jpeg"
 import hacktoberfest from "/assets/hacktoberfest.jpeg"
+import acehack from "/assets/AceHack4.0.jpeg"
 import { useSelector } from "react-redux";
 
 function Achievement() {
@@ -14,6 +15,22 @@ function Achievement() {
         theme ? "bg-[#1A1A1A]" : "bg-gray-100 "
       } rounded-xl md:p-10 `}
     >
+      <div>
+      <a
+          href="https://www.linkedin.com/posts/thecodecrusaderx_acehack4-hackathon-jaipur-activity-7313254682783584259--z9j?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD3tleMBACOYAV1nq-JUBvVK02w1RFARijs"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        <MultiActionAreaCard
+          img={acehack}
+          name={"AceHack 4.0"}
+          dis={
+            "Just wrapped up AceHack 4.0, my first 36-hour offline hackathon at UEM Jaipur! 🚀We started with a tutor-student app but pivoted to a Q&A platform with monetary rewards based on mentor feedback.The experience taught me the power of adaptability, collaboration, and quick thinking.Grateful for the amazing memories and connections"
+          }
+        />
+        </a>
+      </div>
+
       <div>
       <a
           href="https://www.linkedin.com/posts/thecodecrusaderx_hacktoberfest2024-opensource-learning-activity-7256251757591199744-Ktxj?utm_source=share&utm_medium=member_desktop"
