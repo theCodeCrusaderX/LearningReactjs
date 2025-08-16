@@ -7,6 +7,7 @@ import passwordPro from "/assets/password-pro.jpeg";
 import BookHeaven from "/assets/BookHeaven.jpeg"
 import Todo from "/assets/Todo.jpeg";
 import Trendora from "/assets/Trendora.png";
+import Ai_sorting_visualizer from "/assets/Ai_Sorting_Visualizer.png";
 import { useSelector } from "react-redux";
 
 function Project() {
@@ -28,7 +29,23 @@ function Project() {
             img={Trendora}
             name={"Trendora"}
             dis={
-              "Built secure platform with JWT auth, admin/user dashboards, and advanced product filtering, Implemented Cloudinary for image management and PayPal payments (processed $5K+ test transactions) Boosted conversions by 22% with guest checkout and responsive design Built dashboard with CRUD ops for products/orders"
+              "Built secure platform with JWT auth, admin/user dashboards, and advanced product filtering, Implemented Cloudinary for image management and PayPal payments (processed $5K+ test transactions) Boosted conversions by 22% with guest checkout and responsive design Built dashboard with CRUD ops for products/orders."
+            }
+          />
+        </a>
+      </div>
+
+      <div>
+        <a
+          href="https://github.com/theCodeCrusaderX/Sorting-Visualizer?tab=readme-ov-file"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <MultiActionAreaCard
+            img={Ai_sorting_visualizer}
+            name={"AI Sorting Visualizer"}
+            dis={
+              "Interactive Sorting Algorithm Visualizer – A real-time visualizer for algorithms like Quick Sort and Bubble Sort, featuring AI-generated explanations via Google Gemini API. Built with the Canvas API for dynamic rendering, with customizable speed and array size for interactive learning."
             }
           />
         </a>
