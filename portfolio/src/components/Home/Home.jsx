@@ -9,15 +9,13 @@ export default function Home() {
 
   return (
     <div
-      className={`mt-10 mx-auto w-full max-w-7xl md:flex justify-around mb-10 md:h-screen items-center ${
-        theme ? "bg-[#1A1A1A]" : "bg-gray-100 "
-      } rounded-xl p-8`}
+      className={`mt-10 mx-auto w-full max-w-7xl md:flex justify-around mb-10 md:h-screen items-center ${theme ? "bg-[#1A1A1A]" : "bg-gray-100 "
+        } rounded-xl p-8`}
     >
       <div className="md:w-2/4">
         <h2
-          className={`text-4xl font-bold sm:text-5xl m-3 mt-10 ${
-            theme ? "text-white" : "text-black"
-          }`}
+          className={`text-4xl font-bold sm:text-5xl m-3 mt-10 ${theme ? "text-white" : "text-black"
+            }`}
         >
           {/* {currentWord}_ */}
           Hello!👋
@@ -25,9 +23,8 @@ export default function Home() {
             <br />
           </span>
           <span
-            className={` sm:block text-xl mt-5 ${
-              theme ? "text-white" : "text-black"
-            }`}
+            className={` sm:block text-xl mt-5 ${theme ? "text-white" : "text-black"
+              }`}
           >
             I am Dinesh
           </span>
@@ -35,26 +32,20 @@ export default function Home() {
             <br />
           </span>
           <span
-            className={`sm:block text-xl mt-5 ${
-              theme ? "text-white" : "text-black"
-            }`}
+            className={`sm:block text-xl mt-5 ${theme ? "text-white" : "text-black"
+              }`}
           >
             Full Stack Developer
           </span>
         </h2>
         <p className={`mt-10 ${theme ? "text-white" : "text-black"}`}>
-          Computer Science student with a focus on Internet of Things, Cyber
-          Security, and Blockchain Development. My passion lies in Full-Stack
-          Web Development, where I excel at simplifying complex codebases into
-          clear and maintainable solutions.I strive to deliver concise and
-          high-quality code, ensuring both efficiency and readability
+          I am a dedicated Full-Stack Web Developer with a passion for transforming ideas into functional, clean, and efficient digital solutions. My expertise spans the entire development lifecycle, from architecting scalable RESTful APIs using Node.js/Express and database management (PostgreSQL/Prisma or MongoDB), to delivering intuitive, responsive user experiences with React and modern UI frameworks. I thrive on solving complex problems and integrating emerging technologies, such as AI/Gemini API, to create highly valuable and optimized applications.
         </p>
         <button
-          className={`flex items-center gap-3 mt-8 font-semibold text-lg px-6 py-3 rounded-xl shadow-lg transition duration-300 ease-in-out ${
-            theme
+          className={`flex items-center gap-3 mt-8 font-semibold text-lg px-6 py-3 rounded-xl shadow-lg transition duration-300 ease-in-out ${theme
               ? "bg-white text-black hover:bg-green-900 hover:text-white"
               : "bg-black text-white hover:bg-green-900"
-          }`}
+            }`}
           onClick={() => window.open("./assets/Resume.pdf")}
         >
           <FaDownload className="text-xl" />

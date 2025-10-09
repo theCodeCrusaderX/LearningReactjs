@@ -93,7 +93,7 @@ function Project() {
           img={BookHeaven}
           name={"Book Heaven"}
           dis={
-            "Created a full-stack book store application featuring a React frontend styled with Tailwind CSS and a Node.js backend using Express. The app allows users to store and manage book details in MongoDB. Focused on creating a clean and responsive UI that enhances user experience while ensuring efficient data handling on the server side."
+            "Engineered a full-stack CRUD application, leveraging a React/Tailwind frontend to deliver a responsive interface with dynamic table/card views and real-time user feedback (Notistack). The backend features a high-performance RESTful API built on Node.js/Express and a PostgreSQL database managed by Prisma. Crucially, the app integrates the Gemini API for AI-powered description generation, increasing content creation speed by 80%, and utilizes Multer/Cloudinary for robust, secure drag-and-drop image uploads."
           }
         />
         </a>
