@@ -52,7 +52,7 @@ export default function Home() {
           Download Resume
         </button>
       </div>
-      <div>
+      <div className="hidden md:block md:w-2/4">
         <center>
           <img
             src="/assets/me.jpg"

@@ -1,8 +1,21 @@
  #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   /* background-color: rgb(18, 17, 17); */
+}
+
+/* Apply padding only for md (768px) and above */
+@media (min-width: 768px) {
+  #root {
+    padding: 2rem;
+  }
+}
+
+/* Optional: Remove padding for smaller screens */
+@media (max-width: 767px) {
+  #root {
+    padding: 15px;
+  }
 }
 
 .dark {
